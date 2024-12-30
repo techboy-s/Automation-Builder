@@ -41,7 +41,6 @@ const Sidebar = (props: Props) => {
                         }
                       )}
                     >
-                      z
                       <menuItem.Component
                         selected={pathName === menuItem.href}
                       />
