@@ -1,3 +1,5 @@
+import ProfilePicture from "./_components/ProfilePicture";
+
 type Props = {};
 
 const Settings = (props: Props) => {
@@ -13,6 +15,11 @@ const Settings = (props: Props) => {
             Add or update your information
           </p>
         </div>
+        {/* <ProfilePicture
+          onDelete={removeProfileImage}
+          userImage={user?.profileImage || ''}
+          onUpload={uploadProfileImage}
+        /> */}
       </div>
     </div>
   );
