@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "./providers/theme-provider";
+import { ThemeProvider } from "../providers/theme-provider";
 import {
   ClerkProvider,
-  // SignInButton,
-  // SignedIn,
-  // SignedOut,
-  // UserButton,
+  SignInButton,
+  SignedIn,
+  SignedOut,
+  UserButton,
 } from "@clerk/nextjs";
+import { ModalProvider } from "@/providers/modal-provider";
 
 const DM = DM_Sans({ subsets: ["latin"] });
 
@@ -32,13 +33,15 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            {/* <SignedOut>
-              <SignInButton />
-            </SignedOut>
-            <SignedIn>
-              <UserButton />
-            </SignedIn> */}
-            {children}
+            <ModalProvider>
+              <SignedOut>
+                <SignInButton />
+              </SignedOut>
+              <SignedIn>
+                <UserButton />
+              </SignedIn>
+              {children}
+            </ModalProvider>
           </ThemeProvider>
         </body>
       </html>
