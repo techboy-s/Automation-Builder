@@ -4,10 +4,10 @@ import "./globals.css";
 import { ThemeProvider } from "./providers/theme-provider";
 import {
   ClerkProvider,
-  SignInButton,
-  SignedIn,
-  SignedOut,
-  UserButton,
+  // SignInButton,
+  // SignedIn,
+  // SignedOut,
+  // UserButton,
 } from "@clerk/nextjs";
 
 const DM = DM_Sans({ subsets: ["latin"] });
@@ -32,12 +32,12 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <SignedOut>
+            {/* <SignedOut>
               <SignInButton />
             </SignedOut>
             <SignedIn>
               <UserButton />
-            </SignedIn>
+            </SignedIn> */}
             {children}
           </ThemeProvider>
         </body>
