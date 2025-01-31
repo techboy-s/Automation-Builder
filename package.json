@@ -28,8 +28,10 @@
     "@uploadcare/file-uploader": "^1.9.0",
     "@uploadcare/react-uploader": "^1.1.0",
     "@xyflow/react": "^12.4.2",
+    "axios": "^1.7.9",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "cmdk": "^1.0.4",
     "framer-motion": "^11.11.9",
     "lucide-react": "^0.453.0",
     "next": "14.2.15",
@@ -43,7 +45,8 @@
     "tailwindcss-animate": "^1.0.7",
     "uuid": "^11.0.5",
     "vaul": "^1.1.2",
-    "zod": "^3.23.8"
+    "zod": "^3.23.8",
+    "zustand": "^5.0.3"
   },
   "devDependencies": {
     "@types/node": "^20",
